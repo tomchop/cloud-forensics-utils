@@ -1,0 +1,13 @@
+matrix:
+    - name: "Ubuntu Bionic (18.04) with Python 3.7"
+      os: linux
+      dist: bionic
+      sudo: required
+      group: edge
+      language: python
+      python: 3.6
+  install:
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+  script:
+  - python run_tests.py
